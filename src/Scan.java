@@ -14,11 +14,11 @@ public class Scan {
         productsMap.put(productCode, amountOfScanedProducts + 1);
    }
 
-    public HashMap<String, Integer> getScanedProducts(){
+    public HashMap<String, Integer> getScannedProducts(){
         return  productsMap;
     }
 
-    public void clearScanedProducts(){
+    public void clearScannedProducts(){
         productsMap.clear();
     }
 

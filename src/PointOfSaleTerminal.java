@@ -20,7 +20,7 @@ public class PointOfSaleTerminal implements PointOfSale {
     public BigDecimal calculateTotal() {
 
         BigDecimal result = new BigDecimal(0);
-        HashMap<String, Integer> scannedProducts = scan.getScanedProducts();
+        HashMap<String, Integer> scannedProducts = scan.getScannedProducts();
         for (String productCode : scannedProducts.keySet()
                 ) {
             result = result.add(
@@ -31,7 +31,7 @@ public class PointOfSaleTerminal implements PointOfSale {
     }
 
     public void clearAll() {
-        scan.clearScanedProducts();
+        scan.clearScannedProducts();
     }
 }
 
